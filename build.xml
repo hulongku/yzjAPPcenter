@@ -3,12 +3,14 @@
    <tstamp>
       <format property="time" pattern="yyyymmddhhmm"/>
    </tstamp>
+   <property environment="env"/>
    <!--需要改成本地的Jmeter目录-->
    <property name="jmeter.home" value="D:\apache-jmeter3.1\apache-jmeter-3.1"/>
    <property name="jmeter.script" value="E:\jmeterscript"/>
    <property name="jmeter.result" value="E:\result"/>
    <!--Jmeter生产jtl格式的结果报告的路径-->
-   <property name="jmeter.result.jtl.dir" value="${jmeter.result}/jtl"/>
+   <property name="jmeter.result.dir" value="${env.WORKSPACE}/results/${env.BUILD_ID}" />
+   <!--<property name="jmeter.result.jtl.dir" value="${jmeter.result}/jtl"/>-->
    <!--Jmeter生产html格式的结果报告的路径录-->
    <property name="jmeter.result.html.dir" value="${jmeter.result}/html"/>
    <!--生产的报告的前缀-->
