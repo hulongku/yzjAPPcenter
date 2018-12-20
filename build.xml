@@ -4,6 +4,7 @@
       <format property="time" pattern="yyyymmddhhmm"/>
    </tstamp>
    <property environment="env"/>
+   <property name="ReportName" value="TestReport" />
    <!--需要改成本地的Jmeter目录-->
    <property name="jmeter.home" value="D:\apache-jmeter3.1\apache-jmeter-3.1"/>
    <property name="jmeter.script" value="E:\jmeterscript"/>
