@@ -9,6 +9,7 @@
     <property name="ReportName" value="TestReport" />
     <!-- 需要改成自己本地的 Jmeter 目录--> 
     <property name="jmeter.home" value="D:\apache-jmeter3.1\apache-jmeter-3.1" />
+	<property name="jmeter.script" value="E:\jmeterscript"/>
     <!-- jmeter生成jtl、html格式的结果报告的路径--> 
     <property name="jmeter.result.dir" value="${env.WORKSPACE}/results/${env.BUILD_ID}" />
     <!-- 生成的报告的前缀-->  
